@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug project in Chrome",
+      "type": "chrome",
+      "request": "launch",
+      "preLaunchTask": "serve",
+      "url": "http://localhost:8000/prj0${input:prj}/project${input:prj}.html",
+      "webRoot": "${workspaceFolder}"
+    }
+  ],
+  "inputs": [
+    { "id": "prj", "type": "pickString", "description": "Project number", "options": ["1","2","3","4","5","6","7"] }
+  ]
+}
